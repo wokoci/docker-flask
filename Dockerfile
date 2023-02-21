@@ -4,10 +4,8 @@ WORKDIR /code
 
 COPY requirements.txt .
 
-
-RUN pip install -r requirements.tx
-
+RUN pip install -r requirements.txt
 
 COPY src/ .
 
-CMD ["pytho","app.py"]
+CMD ["python","app.py"]
